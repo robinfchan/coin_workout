@@ -22,56 +22,56 @@ if go_flip == True:
         st.write('Tails: 25 Calf Raises')
         workout.append('Tails: 25 Calf Raises')
     #2
-    if flips[0] == 0:
+    if flips[1] == 0:
         st.write('Heads: 60 sec. Jog in Place')
         workout.append('Heads: 60 sec. Jog in Place')
     else:
         st.write('Tails: 25 Jumping Jacks')
         workout.append('Tails: 25 Jumping Jacks')
     #3
-    if flips[0] == 0:
+    if flips[2] == 0:
         st.write('Heads: 20 Kneeling Pushups')
         workout.append('Heads: 20 Kneeling Pushups')
     else:
         st.write('Tails: 10 Pushups')
         workout.append('Tails: 10 Pushups')
     #4
-    if flips[0] == 0:
+    if flips[3] == 0:
         st.write('Heads: 20 Jumping Jacks')
         workout.append('Heads: 20 Jumping Jacks')
     else:
         st.write('Tails: 50 sec. Jog in place')
         workout.append('Tails: 50 sec. Jog in place')
     #5
-    if flips[0] == 0:
+    if flips[4] == 0:
         st.write('Heads: 40 High Knees')
         workout.append('Heads: 40 High Knees')
     else:
         st.write('Tails: 40 Jumping Jacks')
         workout.append('Tails: 40 Jumping Jacks')
     #6
-    if flips[0] == 0:
+    if flips[5] == 0:
         st.write('Heads: 35 Crunches')
         workout.append('Heads: 35 Crunches')
     else:
         st.write('Tails: 20 Situps')
         workout.append('Tails: 20 Situps')
     #7
-    if flips[0] == 0:
+    if flips[6] == 0:
         st.write('Heads: 10 Push Ups')
         workout.append('Heads: 10 Push Ups')
     else:
         st.write('Tails: 20 Kneeling Pushups')
         workout.append('Tails: 20 Kneeling Pushups')
     #8
-    if flips[0] == 0:
+    if flips[7] == 0:
         st.write('Heads: 60s Jog in Place')
         workout.append('Heads: 60s Jog in Place')
     else:
         st.write('Tails: 25 Jumping Jacks')
         workout.append('Tails: 25 Jumping Jacks')
     #9
-    if flips[0] == 0:
+    if flips[8] == 0:
         st.write('Heads: 50 Crunches')
         workout.append('Heads: 50 Crunches')
     else:
