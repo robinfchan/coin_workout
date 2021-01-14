@@ -16,8 +16,8 @@ if go_flip == True:
     workout = []
     #1
     if flips[0] == 0:
-        st.write('Heads: 15 Squats')
-        workout.append('Heads: 15 Squats')
+        st.write('Heads: 15 Jump Squats')
+        workout.append('Heads: 15 Jump Squats')
     else:
         st.write('Tails: 25 Calf Raises')
         workout.append('Tails: 25 Calf Raises')
@@ -40,8 +40,8 @@ if go_flip == True:
         st.write('Heads: 20 Jumping Jacks')
         workout.append('Heads: 20 Jumping Jacks')
     else:
-        st.write('Tails: 50 sec. Jog in place')
-        workout.append('Tails: 50 sec. Jog in place')
+        st.write('Tails: 50 sec. Jog in Place')
+        workout.append('Tails: 50 sec. Jog in Place')
     #5
     if flips[4] == 0:
         st.write('Heads: 40 High Knees')
