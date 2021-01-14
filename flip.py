@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import base64
 import pickle
+import os
 
 ### Start Streamlit###
 st.subheader("The World Famous")
@@ -82,26 +83,32 @@ if go_flip == True:
 
 done = st.checkbox('I did it all!')
 if done == True:
-    pic_num = np.random.randint(4, size = 1)
-    pic_sel = f'{int(pic_num)}.GIF'
-    file_ = open(pic_sel, "rb")
-    contents = file_.read()
-    url = base64.b64encode(contents).decode("utf-8")
-    file_.close()
 
-    with open('workout.pickle', 'rb') as fp:
-       workout = pickle.load(fp)
+    if os.path.exists('workout.pickle'):
 
-    st.write("Wow, great work. So proud! Such an athlete!")
-    st.text("Your workout:")
-    st.text(f'{workout[0]}')
-    st.text(f'{workout[1]}')
-    st.text(f'{workout[2]}')
-    st.text(f'{workout[3]}')
-    st.text(f'{workout[4]}')
-    st.text(f'{workout[5]}')
-    st.text(f'{workout[6]}')
-    st.text(f'{workout[7]}')
-    st.text(f'{workout[8]}')
-    st.markdown(f'<img src="data:image/gif;base64,{url}" alt="done gif">', unsafe_allow_html=True,)
-    
+        pic_num = np.random.randint(4, size = 1)
+        pic_sel = f'{int(pic_num)}.GIF'
+        file_ = open(pic_sel, "rb")
+        contents = file_.read()
+        url = base64.b64encode(contents).decode("utf-8")
+        file_.close()
+
+        with open('workout.pickle', 'rb') as fp:
+            workout = pickle.load(fp)
+
+        st.write("Wow, great work. So proud! Such an athlete!")
+        st.text("Your workout:")
+        st.text(f'{workout[0]}')
+        st.text(f'{workout[1]}')
+        st.text(f'{workout[2]}')
+        st.text(f'{workout[3]}')
+        st.text(f'{workout[4]}')
+        st.text(f'{workout[5]}')
+        st.text(f'{workout[6]}')
+        st.text(f'{workout[7]}')
+        st.text(f'{workout[8]}')
+        st.markdown(f'<img src="data:image/gif;base64,{url}" alt="done gif">', unsafe_allow_html=True,)
+
+        os.remove('workout.pickle')
+    else:
+        st.write("CHEATER!")        
