@@ -16,67 +16,67 @@ if go_flip == True:
     workout = []
     #1
     if flips[0] == 0:
-        st.write('1: 15 Squats')
-        workout.append('1: 15 Squats')
+        st.write('Heads: 15 Squats')
+        workout.append('Heads: 15 Squats')
     else:
-        st.write('1: 25 Calf Raises')
-        workout.append('1: 25 Calf Raises')
+        st.write('Tails: 25 Calf Raises')
+        workout.append('Tails: 25 Calf Raises')
     #2
     if flips[0] == 0:
-        st.write('2: 60 sec. Jog in Place')
-        workout.append('2: 60 sec. Jog in Place')
+        st.write('Heads: 60 sec. Jog in Place')
+        workout.append('Heads: 60 sec. Jog in Place')
     else:
-        st.write('2: 25 Jumping Jacks')
-        workout.append('2: 25 Jumping Jacks')
+        st.write('Tails: 25 Jumping Jacks')
+        workout.append('Tails: 25 Jumping Jacks')
     #3
     if flips[0] == 0:
-        st.write('3: 20 Kneeling Pushups')
-        workout.append('3: 20 Kneeling Pushups')
+        st.write('Heads: 20 Kneeling Pushups')
+        workout.append('Heads: 20 Kneeling Pushups')
     else:
-        st.write('3: 10 Pushups')
-        workout.append('3: 10 Pushups')
+        st.write('Tails: 10 Pushups')
+        workout.append('Tails: 10 Pushups')
     #4
     if flips[0] == 0:
-        st.write('4: 20 Jumping Jacks')
-        workout.append('4: 20 Jumping Jacks')
+        st.write('Heads: 20 Jumping Jacks')
+        workout.append('Heads: 20 Jumping Jacks')
     else:
-        st.write('4: 50 sec. Jog in place')
-        workout.append('4: 50 sec. Jog in place')
+        st.write('Tails: 50 sec. Jog in place')
+        workout.append('Tails: 50 sec. Jog in place')
     #5
     if flips[0] == 0:
-        st.write('5: 40 High Knees')
-        workout.append('5: 40 High Knees')
+        st.write('Heads: 40 High Knees')
+        workout.append('Heads: 40 High Knees')
     else:
-        st.write('5: 40 Jumping Jacks')
-        workout.append('5: 40 Jumping Jacks')
+        st.write('Tails: 40 Jumping Jacks')
+        workout.append('Tails: 40 Jumping Jacks')
     #6
     if flips[0] == 0:
-        st.write('6: 35 Crunches')
-        workout.append('6: 35 Crunches')
+        st.write('Heads: 35 Crunches')
+        workout.append('Heads: 35 Crunches')
     else:
-        st.write('6: 20 Situps')
-        workout.append('6: 20 Situps')
+        st.write('Tails: 20 Situps')
+        workout.append('Tails: 20 Situps')
     #7
     if flips[0] == 0:
-        st.write('7: 10 Push Ups')
-        workout.append('7: 10 Push Ups')
+        st.write('Heads: 10 Push Ups')
+        workout.append('Heads: 10 Push Ups')
     else:
-        st.write('7: 20 Kneeling Pushups')
-        workout.append('7: 20 Kneeling Pushups')
+        st.write('Tails: 20 Kneeling Pushups')
+        workout.append('Tails: 20 Kneeling Pushups')
     #8
     if flips[0] == 0:
-        st.write('8: 60s Jog in Place')
-        workout.append('8: 60s Jog in Place')
+        st.write('Heads: 60s Jog in Place')
+        workout.append('Heads: 60s Jog in Place')
     else:
-        st.write('8: 25 Jumping Jacks')
-        workout.append('8: 25 Jumping Jacks')
+        st.write('Tails: 25 Jumping Jacks')
+        workout.append('Tails: 25 Jumping Jacks')
     #9
     if flips[0] == 0:
-        st.write('9: 50 Crunches')
-        workout.append('9: 50 Crunches')
+        st.write('Heads: 50 Crunches')
+        workout.append('Heads: 50 Crunches')
     else:
-        st.write('9: 20 Situps')
-        workout.append('9: 20 Situps')
+        st.write('Tails: 20 Situps')
+        workout.append('Tails: 20 Situps')
 
     with open('workout.pickle', 'wb') as fp:
         pickle.dump(workout, fp)
