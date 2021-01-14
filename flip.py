@@ -83,8 +83,7 @@ if go_flip == True:
 
 done = st.checkbox('I did it all!')
 if done == True:
-
-    if os.path.exists('workout.pickle') and go_flip == True:
+    if os.path.exists('workout.pickle'):
 
         pic_num = np.random.randint(4, size = 1)
         pic_sel = f'{int(pic_num)}.GIF'
@@ -112,3 +111,5 @@ if done == True:
         os.remove('workout.pickle')
     else:
         st.write("CHEATER!")
+        if os.path.exists('workout.pickle'):
+            os.remove('workout.pickle')
